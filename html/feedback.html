@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/feedback.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="header">
+        <header>
+            <h1 class="header-h1">Word Study</h1>
+            <p class="header-p">Learn a new word every day!</p>
+        </header>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item"><a href="index.html">Home</a></li>
+                <li class="navbar-item"><a href="about.html">About</a></li>
+                <li class="navbar-item"><a href="streak.html">Streak</a></li>
+                <li class="navbar-item"><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <figure class="svg-container">
+        <svg width="211px" height="211px">
+            <path d="M210.030,105.011 C210.030,163.014 163.010,210.029 105.012,210.029 C47.013,210.029 -0.005,163.014 -0.005,105.011 C-0.005,47.015 47.013,-0.004 105.012,-0.004 C163.010,-0.004 210.030,47.015 210.030,105.011 Z" fill="pink"></path>
+        </svg>
+    </figure>
+    <div class="container">
+        <div class="form-container">
+            <div class="header">
+                <h1>Feedback Form</h1>
+                <p>We’d love to hear your thoughts and suggestions!</p>
+                <p>Your feedback helps us improve our Word Study platform and provides a better experience for everyone.</p>
+            </div>
+
+            <form id="feedbackForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+            
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+            
+                <div class="form-group">
+                    <label for="feedback">Your Feedback</label>
+                    <textarea id="feedback" name="feedback" required></textarea>
+                    <span class="error-message" id="feedbackError"></span>
+                </div>
+            
+                <button type="submit" class="button">Submit Feedback</button>
+            </form>
+            
+            <div id="successMessage" style="display:none;">Thank you for your feedback!</div>
+            <div id="errorMessage" style="display:none;">Something went wrong. Please try again.</div>
+            
+
+            <div class="feedback-message" id="successMessage">Thank you for your feedback!</div>
+            <div class="error-message" id="errorMessage">Something went wrong. Please try again.</div>
+        </div>
+    </div>
+
+
+
+    <hr class="footer-hr">
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="image">
+                    <img src="../images/footer.gif" alt="" height="200px">
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="streak.html">Streak</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:support@yourapp.com">support@wordstudy.com</a></p>
+                    <p>Phone: +1 234 567 890</p>
+                    <p>Location: 1234 Street Name, City, Country</p>
+                </div>
+                <div class="footer-section subscription">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for updates and exclusive content!</p>
+                    <form class="subscription-form">
+                        <input type="email" placeholder="Enter your email" required />
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Word Study. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" aria-label="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+        
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="../js/feedback.js"></script>
+</body>
+
+</html>

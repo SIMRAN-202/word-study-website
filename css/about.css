@@ -1,0 +1,418 @@
+
+.about-section{
+  
+    width: 100%;
+}
+.about-section h2 {
+    color:#0e539d; 
+    margin-bottom: 15px; 
+    text-align: center;
+    font-size: 2rem;
+}
+.welcome-p{
+    font-size: 1.2rem;
+    padding: 0 20px ;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .features-p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+   
+    .slider-container {
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        width: 100%; /* Full width for the container */
+        overflow: hidden; /* Prevent overflow */
+        position: relative;
+        margin: 20px 0;
+        transition: transform 0.3s ease;
+   
+    }
+    
+    .features-container {
+        display: flex; /* Use flexbox for horizontal layout */
+        transition: transform 0.5s ease; /* Smooth transition for sliding */
+        justify-content: center;
+    }
+    
+    .feature-card {
+        background-color: #ffffff; /* White background for cards */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        padding: 15px; /* Padding inside cards */
+        margin: 10px; /* Margin between cards */
+        flex: 0 0 30%; /* Each card takes up 30% of the container */
+        box-sizing: border-box; /* Include padding and border in width */
+        text-align: center; /* Center text within cards */
+    }
+    
+    .feature-image {
+        width: 100%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 8px; /* Rounded corners for images */
+        margin-bottom: 10px; /* Space below the image */
+    }
+    
+    .feature-card h4 {
+        color: #041c36; /* Dark color for feature titles */
+        margin-bottom: 10px; /* Space below titles */
+    }
+    
+    .feature-card p {
+        color: #555; /* Gray color for feature descriptions */
+    }
+    
+    .slider-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); /* Center vertically */
+        background-color: #5555557a; /* Semi-transparent background */
+        border: none; /* No border */
+        cursor: pointer; /* Pointer cursor */
+        padding: 10px; /* Padding for buttons */
+        border-radius: 50%; /* Round buttons */
+        font-size: 30px; /* Font size for arrows */
+        z-index: 10; /* Ensure buttons are above the slider */
+        opacity: 0; /* Hide buttons by default */
+        transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for opacity */
+    }
+    
+    .prev {
+        left: 10px; /* Position left button */
+        transform: translateY(-50%) translateX(-100%); /* Start from the left */
+    }
+    
+    .next {
+        right: 10px; /* Position right button */
+        transform: translateY(-50%) translateX(100%); /* Start from the right */
+    }
+    
+    .control-btn:hover {
+        background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+    }
+    
+    /* Show buttons on hover */
+    .slider-container:hover .slider-button {
+        opacity: 1; /* Show buttons on hover */
+        transform: translateY(-50%) translateX(0); /* Move buttons to the center */
+    }
+    
+    .how-it-works-section h3,
+    .features-section h3,
+    .faq-section h3 {
+        font-size: 1.4rem;
+        text-align: center;
+        color: #033a5e;
+        margin: 50px 20px 0 0;
+    }
+    
+    .how-it-works-section h3,
+    .features-section h3,
+    .faq-section h3 {
+        font-size: 1.4rem;
+        text-align: center;
+        color: #033a5e;
+        margin: 50px 20px 0 0;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.how-it-works-container {
+    margin: 20px 0; 
+    padding: 40px; 
+    background: linear-gradient(to right, #9bc8f8, #1764b7);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.how-it-works-steps {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the cards */
+    gap: 20px; /* Space between steps */
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 1; /* Allow cards to grow equally */
+    background-color:aliceblue; /* White background for steps */
+    border-radius: 50px 0; /* Rounded corners */
+    padding: 20px; /* Padding inside cards */
+    text-align: center; /* Center text within cards */
+    box-shadow:  2px 2px 5px  rgba(0,0,0); 
+    transition: transform 0.3s; 
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.step:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.how-it-works-icon{
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.faq-section {
+    width: 100%; /* Full width of the body */
+    padding: 20px; 
+
+   
+}
+.faq-container {
+    max-width: 800px; /* Optional: limit the width for better readability */
+    margin:  auto; /* Center the container */
+}
+
+.faq-item {
+    border-bottom: 1px solid #9ab0e5; /* Bottom border to separate items */
+    padding: 15px 0; /* Padding for each FAQ item */
+    transition: background-color 0.3s; 
+   
+    transform: translateY(50px);
+
+}
+
+
+.faq-item:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+.faq-question {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between question and icon */
+    align-items: center; /* Center items vertically */
+    cursor: pointer; /* Pointer cursor for clickable items */
+}
+.faq-question h4{
+    font-size: 1.2rem;
+    color: #041c36d6;
+}
+
+.faq-icon {
+    font-size: 20px; /* Size of the icon */
+    transition: transform 0.3s; /* Smooth transition for icon rotation */
+}
+
+.faq-answer {
+    display: none; /* Hide answers by default */
+    padding-top: 10px; /* Space above the answer */
+}
+
+/* Show answer when the question is clicked */
+.faq-item.active .faq-answer {
+    display: block; /* Show the answer */
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(180deg); /* Rotate icon when active */
+}
+
+.faq-question svg {
+    margin-right: 10px; /* Space between icon and question text */
+    vertical-align: middle; /* Align icon with text */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .faq-question {
+        margin-left: 40px;
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.testimonials-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials-section .testimonial-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    opacity: 0.2; /* Adjust to make content more readable */
+}
+
+.testimonials-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+    gap: 50px; /* Space between grid items */
+    padding: 50px;
+
+}
+
+.testimonials-content h3 {
+    grid-column: span 2; /* Makes the heading span both columns */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    color: #033a5e;
+}
+
+.testimonials-content .testimonial {
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    background: linear-gradient(to right, rgba(240, 248, 255, 0.8), rgba(230, 230, 250, 0.8));
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Optional: Adds a frosted-glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Adds a subtle border */
+}
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.rating {
+    display: flex;
+    gap: 2px;
+}
+
+.star {
+    color: #FFD700; /* Gold color for the stars */
+    font-size: 1.2rem;
+}
+
+.testimonial p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.testimonial strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .testimonials-content {
+        grid-template-columns: 1fr; /* Stack testimonials in a single column */
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .testimonials-content h3 {
+        font-size: 1.2rem; /* Adjust heading size */
+    }
+
+    .testimonials-content .testimonial {
+        padding: 10px; /* Reduce padding for each testimonial */
+    }
+
+    .profile-pic {
+        width: 40px; /* Smaller profile picture on mobile */
+        height: 40px; /* Smaller profile picture on mobile */
+    }
+
+    .star {
+        font-size: 1rem; /* Smaller stars on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-section {
+        padding: 10px; /* Further reduce padding on very small screens */
+    }
+
+    .testimonials-content h3 {
+        font-size: 1rem; /* Further adjust heading size */
+    }
+
+    .testimonials-content .testimonial {
+        padding: 8px; /* Further reduce padding for each testimonial */
+    }
+
+    .profile-pic {
+        width: 35px; /* Even smaller profile picture on very small screens */
+        height: 35px; /* Even smaller profile picture on very small screens */
+    }
+
+    .star {
+        font-size: 0.9rem; /* Smaller stars on very small screens */
+    }
+}
+

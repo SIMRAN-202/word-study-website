@@ -1,0 +1,156 @@
+.container {
+    width: 70%; /* Maximum width for the form */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: relative;
+    transition: all 0.3s ease-in-out; /* Smooth transitions */
+
+}
+
+h1 { 
+    font-size: 2rem; /* Larger font size for title */
+    color: #033a5e; /* Dark color for title */
+}
+
+p {
+    color: #555; /* Gray color for description */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold labels */
+    color: #041c36; /* Dark color for labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: none; /* Remove all borders */
+    border-bottom: 1px solid #ccc; /* Light bottom border */
+    border-radius: 0; /* No rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 1rem; /* Standard font size */
+    transition: border-color 0.3s, box-shadow 0.3s ease-in-out; /* Smooth transitions */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-bottom: 1px solid #041c36; /* Dark bottom border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 10px rgba(4, 28, 54, 0.4); /* Subtle shadow on focus */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px; /* Minimum height for textarea */
+}
+
+.button {
+    background-color: #041c36; /* Dark button background */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1rem; /* Standard font size */
+    transition: background-color 0.3s, transform 0.2s ease; /* Smooth transitions */
+    width: 100%; /* Full width for button */
+}
+
+.button:hover {
+    background-color: #033a5e; /* Darker background on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+
+#successMessage {
+text-align: center;
+    color: green;
+    font-size: 19px;
+    display: block;
+    margin-top: 5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+#successMessage, #errorMessage {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* styles.css */
+
+.svg-container {
+    width: 211px; 
+    height: 211px; 
+    position: absolute; 
+    top: 50%; 
+    left: 84%; 
+    transform: translate(-50%, -50%);
+    margin-bottom: 16px; 
+}
+
+svg {
+    width: 100%; 
+    height: 100%;
+}
+
+path {
+    fill: #2385eee3;
+    animation:bounce 4s infinite;
+     
+}
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Original position */
+    }
+    40% {
+        transform: translateY(-30px); /* Move up */
+    }
+    60% {
+        transform: translateY(-15px); /* Move down */
+    }
+}
+@media (max-width: 768px) {
+    .svg-container {
+        width: 150px; 
+        height: 150px;
+        transform: translate(-50%, 0); 
+    }
+    
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+    path{
+        animation: none;
+    }
+}
+
+

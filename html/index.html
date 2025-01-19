@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Study </title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/index.css">
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <h1 class="header-h1">Word Study</h1>
+            <p class="header-p">Learn a new word every day!</p>
+        </header>
+           <!-- First SVG Circle -->
+    <div class="svg-container-1 random-position-1">
+        <svg viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" />
+        </svg>
+    </div>
+
+    <!-- Second SVG Circle -->
+    <div class="svg-container-2 random-position-2">
+        <svg viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" />
+        </svg>
+    </div>
+</div>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item"><a href="index.html">Home</a></li>
+                <li class="navbar-item"><a href="about.html">About</a></li>
+                <li class="navbar-item"><a href="streak.html">Streak</a></li>
+                <li class="navbar-item"><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="animation-wrapper">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+
+
+
+    <div id="container">
+        <div id="content">
+
+            <h2 class="word-heading">Word of the day </h2>
+            <div class="word-content-and-info">
+                <div class="word-content">
+                    <div class="word-text">[Word]</div>
+                    <div class="pronunciation-text">[Pronunciation]</div>
+                    <div class="meaning-text">[Meaning]</div>
+                    <div class="example-text">[Example Sentence]</div>
+                </div>
+
+                <div id="additional-info">
+                    <p id="synonyms">Synonyms: <span id="synonyms-text">[Synonyms]</span></p>
+                    <p id="antonyms">Antonyms: <span id="antonyms-text">[Antonyms]</span></p>
+                </div>
+            </div>
+
+            <div class="more-info">
+                <a id="learn-more" href="#"><i class="fas fa-info-circle icon"></i> Learn More</a>
+
+                <h3 class="history-heading">Word History</h3>
+                <ul id="word-history">
+                    <!-- JavaScript will populate this list dynamically -->
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <div id="practice-section">
+            <h3 class="practice-h3">Practice Pronunciation</h3>
+
+            <div class="practice-item">
+                <button class="icon-button" id="mic-button" onclick="startRecording()">
+                    <i class="fas fa-microphone icon"></i>
+                </button>
+                <div>Speak the Word</div>
+            </div>
+
+            <div class="practice-item">
+                <button class="icon-button" id="play-audio" onclick="playAudio()">
+                    <i class="fas fa-volume-up icon"></i>
+                </button>
+                <div>Play Pronunciation</div>
+            </div>
+
+
+            <div class="practice-item">
+                <button class="icon-button" id="repeat-button" onclick="repeatAudio()">
+                    <i class="fas fa-redo icon"></i>
+                </button>
+                <div>Repeat Pronunciation</div>
+            </div>
+
+            <div class="speed-controls">
+                <div class="practice-item">
+                    <button class="icon-button" id="speed-slow" onclick="adjustSpeed('slow')">
+                        <i class="fas fa-fast-backward icon"></i>
+                    </button>
+                    <div>Slow</div>
+                </div>
+
+                <div class="practice-item">
+                    <button class="icon-button" id="speed-normal" onclick="adjustSpeed('normal')">
+                        <i class="fas fa-circle icon"></i>
+                    </button>
+                    <div>Normal</div>
+                </div>
+
+                <div class="practice-item">
+                    <button class="icon-button" id="speed-fast" onclick="adjustSpeed('fast')">
+                        <i class="fas fa-fast-forward icon"></i>
+                    </button>
+                    <div>Fast</div>
+                </div>
+            </div>
+
+            <span class="feedback-span">Check feedback of ur Pronunciation : <a href="" class="show-feedback">show
+                    feedback</a></span>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <hr class="footer-hr">
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="image">
+                    <img src="../images/footer.gif" alt="" height="200px">
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="streak.html">Streak</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:support@yourapp.com">support@wordstudy.com</a></p>
+                    <p>Phone: +1 234 567 890</p>
+                    <p>Location: 1234 Street Name, City, Country</p>
+                </div>
+                <div class="footer-section subscription">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for updates and exclusive content!</p>
+                    <form class="subscription-form">
+                        <input type="email" placeholder="Enter your email" required />
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Word Study. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" aria-label="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="../js/index.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
